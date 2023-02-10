@@ -1,0 +1,213 @@
+{%load static%}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Mirrored from Finleadtrading.com/plans.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 12 Jan 2023 02:36:11 GMT -->
+<head>
+
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+<meta name="description" content="Finlead - Trading and Investing">
+<meta name="keywords" content="bitcoin, bitcoin trading, blockchain, cryptocurrency, Cryptocurrency investing, trading, crypto Consulting, USDT, ETH, Finlead trading, hyip, crypto investing">
+
+<title>Plans | {{site.name}} Plans</title>
+
+<link rel="stylesheet" href="{% static 'assets/bootstrap/css/bootstrap.min.css' %}">
+
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300&amp;display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="{% static 'assets/fonts/font-awesome.min.css' %}">
+<link rel="stylesheet" href="{% static 'assets/fonts/themify-icons.css' %}">
+<link rel="stylesheet" href="{% static 'assets/css/materialdesignicons-min.css' %}">
+
+<link rel="stylesheet" href="{% static 'assets/owlcarousel/css/owl.carousel.css' %}">
+<link rel="stylesheet" href="{% static 'assets/owlcarousel/css/owl.theme.css' %}">
+
+<link rel="stylesheet" href="{% static 'assets/css/animate.css' %}">
+
+<link rel="stylesheet" href="{% static 'assets/css/magnific-popup.css' %}">
+
+<link rel="stylesheet" href="{% static 'assets/css/style-four.css' %}">
+<link rel="stylesheet" href="{% static 'css/plans.css' %}" media="screen">
+<link rel="stylesheet" href="{% static 'css/chart.css' %}" media="screen">
+
+
+
+<link rel="shortcut icon" type="image/jpg" href="{% static 'assets/img/fav.png' %}" />
+<script type="application/ld+json">{
+		"@context": "http://schema.org",
+		"@type": "Organization",
+		"name": ""
+}</script>
+<meta name="theme-color" content="#478ac9">
+<meta property="og:title" content="plans">
+<meta property="og:type" content="website">
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-K8LF2SBBV4" type="dad213e4eee3326a38d59a8f-text/javascript"></script>
+<script type="dad213e4eee3326a38d59a8f-text/javascript">
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-K8LF2SBBV4');
+</script>
+</head>
+<body data-spy="scroll" data-offset="80" data-home-page="plans" data-home-page-title="plans" class="u-body u-xl-mode" data-lang="en">
+
+<div class="preloader">
+<div class="spinner">
+<div class="double-bounce1"></div>
+<div class="double-bounce2"></div>
+</div>
+</div>
+
+
+<nav id="navbar" class="navbar navbar-expand-lg fixed-top navbar-custom2 navbar-light sticky">
+<div class="container">
+<a class="navbar-brand" href="{%url 'home' %}"><img src="{% static 'assets/img/logo.png' %}" alt=""></a>
+<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+<span class="mdi mdi-menu"></span>
+</button>
+<div class="collapse navbar-collapse" id="navbarCollapse">
+    <ul id="navbar-navlist" class="navbar-nav ms-auto">
+    <li class="nav-item"><a class="nav-link active" href="{%url 'home' %}">Home</a></li>
+    <li class="nav-item"><a class="nav-link" href="{%url 'about-us' %}">About</a></li>
+    <li class="nav-item"><a class="nav-link" href="{%url 'plans' %}">Plans</a></li>
+    <li class="nav-item"><a class="nav-link" href="{%url 'contact' %}">Contact</a></li>
+    <li class="nav-item"><a class="nav-link" href="/accounts/login"><img src="assets/img/shield-24.png" width="15px" height="15px" /> <b>Client Login</b></a></li>
+    <li class="nav-item"><a class="nav-link" href="/accounts/signup"><img src="assets/img/register.png" width="15px" height="15px" /> <b>Register</b></a></li>
+    </ul>
+</div>
+</div>
+</nav>
+
+<div class="wrapper">
+  {% for plan in plans %}
+<div class="pricing-table gprice-single">
+<div class="head">
+<h4 class="title">{{ plan.plan_name |title }}</h4>
+</div>
+<div class="content">
+<div class="price">
+<h1>${{ plan.investment_amount_lowest }}</h1>
+</div>
+<ul>
+<li>Minimum Investment: ${{ plan.investment_amount_lowest }}</li>
+<li>Maximum Investment: ${{ plan.investment_amount_highest }}</li>
+<li>Profit Return:  {{ plan.investment_profit_percent }} % </li>
+<li>Duration: {{ plan.number_of_days }}</li>
+<li>Referral Bonus {{ plan.referral_profit_percent }} %</li>
+</ul>
+<div class="sign-up">
+<a href="/accounts/signup" class="btn bordered radius">BUY PLAN</a>
+</div>
+</div>
+</div>
+{%endfor%}
+</div>
+<center> <font color="#444" size="5px"> <b>Referral Commission</b></font>
+<br /><br />
+
+<div class="breadcrumb">
+<a href="#">Direct 20%</a>
+<a href="#">Level 1 - 5%</a>
+<a href="#">Level 2 - 4%</a>
+<a href="#">Level 3 - 3%</a>
+<a href="#">Level 4 - 2%</a>
+<a href="#">Level 5 - 1%</a>
+</div>
+<br /><br />
+
+<script src="https://thecodeplayer.com/uploads/js/prefixfree-1.0.7.js' %}" type="dad213e4eee3326a38d59a8f-text/javascript" type="text/javascript"></script>
+</center>
+
+<script type="dad213e4eee3326a38d59a8f-text/javascript">
+var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+(function(){
+var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+s1.async=true;
+s1.src='https://embed.tawk.to/6353e3c7daff0e1306d35c38/1gfvr3h9e';
+s1.charset='UTF-8';
+s1.setAttribute('crossorigin','*');
+s0.parentNode.insertBefore(s1,s0);
+})();
+</script>
+
+
+<div class="footer" style="background-image: url(static/assets/img/bg/footer.png);  background-size:cover;">
+<div class="container">
+<div class="row">
+<div class="col-lg-3 col-sm-6 col-xs-12">
+<div class="footer_logo">
+<img src="{% static 'assets/img/logo.png' %}" alt="" />
+<p>&copy; 2022 Finlead Trading LLC. <br />All Rights Reserved.</p>
+</div>
+<div class="social_profile">
+<ul>
+<li><a href="#" class="f_facebook"><i class="fa fa-facebook" title="Facebook"></i></a></li>
+<li><a href="#" class="f_twitter"><i class="fa fa-twitter" title="Twitter"></i></a></li>
+<li><a href="#" class="f_instagram"><i class="fa fa-instagram" title="Instagram"></i></a></li>
+</ul>
+</div>
+</div>
+<div class="col-lg-3 col-sm-6 col-xs-12">
+<div class="single_footer single_footer_top_one">
+<h4>Resources</h4>
+<ul>
+<li><a href="{%url 'privacy' %}">Privacy Policy</a></li>
+<li><a href="{%url 'tos' %}">Terms & Conditions</a></li>
+</ul>
+</div>
+</div>
+<div class="col-lg-3 col-sm-6 col-xs-1">
+<div class="single_footer single_footer_top">
+<h4>Company</h4>
+<ul>
+<li><a href="{%url 'about-us' %}">About Us</a></li>
+<li><a href="{%url 'terms' %}">Terms of Use</a></li>
+</ul>
+</div>
+</div>
+<div class="col-lg-3 col-sm-6 col-xs-12">
+<div class="newsletter-form">
+<h4>Subscribe for get updates</h4>
+<form action="#" class="subscribe">
+<input type="text" class="subscribe__input" placeholder="Email Address">
+<button type="button" class="btn_one">Subscribe</button>
+</form>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+
+<script src="{% static 'assets/js/jquery-1.12.4.min.js' %}" type="dad213e4eee3326a38d59a8f-text/javascript"></script>
+
+<script src="{% static 'assets/bootstrap/js/bootstrap.min.js' %}" type="dad213e4eee3326a38d59a8f-text/javascript"></script>
+
+<script src="{% static 'assets/js/modernizr-2.8.3.min.js' %}" type="dad213e4eee3326a38d59a8f-text/javascript"></script>
+
+<script src="{% static 'assets/owlcarousel/js/owl.carousel.min.js' %}" type="dad213e4eee3326a38d59a8f-text/javascript"></script>
+
+<script src="{% static 'assets/js/jquery.counterup.min.js' %}" type="dad213e4eee3326a38d59a8f-text/javascript"></script>
+<script src="{% static 'assets/js/countdown.js' %}" type="dad213e4eee3326a38d59a8f-text/javascript"></script>
+
+<script src="{% static 'assets/js/jquery.magnific-popup.min.js' %}" type="dad213e4eee3326a38d59a8f-text/javascript"></script>
+
+<script src="{% static 'assets/js/jquery.inview.min.js' %}" type="dad213e4eee3326a38d59a8f-text/javascript"></script>
+
+<script src="{% static 'assets/js/particles.min.js' %}" type="dad213e4eee3326a38d59a8f-text/javascript"></script>
+<script src="{% static 'assets/js/app.js' %}" type="dad213e4eee3326a38d59a8f-text/javascript"></script>
+
+<script src="{% static 'assets/js/wow.min.js' %}" type="dad213e4eee3326a38d59a8f-text/javascript"></script>
+
+
+<script src="{% static 'assets/js/scripts.js' %}" type="dad213e4eee3326a38d59a8f-text/javascript"></script>
+<script src="{% static 'cdn-cgi/scripts/7d0fa10a/cloudflare-static/rocket-loader.min.js' %}" data-cf-settings="dad213e4eee3326a38d59a8f-|49" defer=""></script></body>
+
+</html>

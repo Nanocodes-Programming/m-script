@@ -1,0 +1,569 @@
+{% load static %}
+<!DOCTYPE html>
+<html class="js">
+ <!-- Mirrored from {{ site.name }}/ by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 29 Dec 2022 21:06:07 GMT -->
+ <!-- Added by HTTrack -->
+ <meta content="text/html;charset=utf-8" http-equiv="content-type"/>
+ <!-- /Added by HTTrack -->
+ <meta content="text/html;charset=utf-8" http-equiv="content-type"/>
+ <!-- /Added by HTTrack -->
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport"/>
+  <meta content="" name="description"/>
+  <link href="{% static 'images/logo.png' %}" rel="shortcut icon"/>
+  <title>
+   {{ site.name }}
+  </title>
+  <link href="{% static 'css/vendor.bundle.css' %}" rel="stylesheet"/>
+  <link href="{% static 'css/style.css' %}" rel="stylesheet"/>
+  <link href="{% static 'fonts/font-awesome-4.7.0/css/font-awesome.min.css' %}" rel="stylesheet">
+   <link href="{% static 'maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.html' %}" id="bootstrap-css" rel="stylesheet"/>
+   <script src="{% static 'maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.html' %}">
+   </script>
+   <script src="{% static 'code.jquery.com/jquery-1.11.1.min.html' %}">
+   </script>
+   <!------ Include the above in your HEAD tag ---------->
+   <link href="{% static 'raw.githubusercontent.com/daneden/animate.css/master/animate.html' %}" rel="stylesheet"/>
+   <script async="" src="{% static '../code.tidio.co/ojcdasfiegmog21nvlhn4erulmmjgpiu.js' %}">
+   </script>
+   <script src="{% static '../translate.google.com/translate_a/elementa0d8.js?cb=googleTranslateElementInit' %}" type="text/javascript">
+   </script>
+   <script type="text/javascript">
+    function googleTranslateElementInit() {
+          new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');
+        }
+   </script>
+  </link>
+ </head>
+ <div aria-modal="true" class="modal fade" id="login-popup">
+  <div class="modal-dialog modal-dialog-centered">
+   <div class="modal-content">
+    <a aria-label="Close" class="modal-close" data-dismiss="modal" href="#">
+     <em class="ti ti-close">
+     </em>
+    </a>
+    <div class="ath-container m-0">
+     <div class="ath-body">
+      <h5 class="ath-heading title">
+       Log In
+       <small class="tc-default">
+        Enter your login information!
+       </small>
+      </h5>
+      <script language="javascript">
+       function checkform() {
+                            if (document.mainform.username.value == '') {
+                                alert("Please type your username!");
+                                document.mainform.username.focus();
+                                return false;
+                            }
+                            if (document.mainform.password.value == '') {
+                                alert("Please type your password!");
+                                document.mainform.password.focus();
+                                return false;
+                            }
+                            return true;
+                        }
+      </script>
+      <br/>
+      
+      <div class="sap-text">
+       <span>
+        Not A Member Yet?
+       </span>
+      </div>
+      <div style="text-align: center;">
+       <a class="btn btn-md btn-facebook" href="/accounts/signup">
+        <span>
+         Sign Up Here
+        </span>
+       </a>
+      </div>
+     </div>
+    </div>
+   </div>
+  </div>
+ </div>
+ <body class="nk-body body-wider bg-light">
+  <div class="nk-wrap">
+   <header class="nk-header page-header is-transparent is-sticky is-shrink" id="header">
+    <!-- Header @s  -->
+    <div class="header-main">
+     <div class="header-container container">
+      <div class="header-wrap">
+       <!-- Logo @s  {% static 'images/logo-full-white.png' %}-->
+       <div class="header-logo logo animated" data-animate="fadeInDown" data-delay=".6">
+        <a class="logo-link" href="/">
+         <img alt="logo" class="logo-dark" src="{% static 'images/logo.png' %}" />
+         <img alt="logo" class="logo-light" src="{% static 'images/logo.png' %}" />
+        </a>
+        <div id="google_translate_element">
+        </div>
+        <script>
+         function googleTranslateElementInit() {
+
+                                    new google.translate.TranslateElement({
+
+                                        pageLanguage: 'en'
+
+                                    }, 'google_translate_element');
+
+                                }
+        </script>
+        <script src="{% static 'translate.google.com/translate_a/elementa0d8a0d8.html?cb=googleTranslateElementInit' %}">
+        </script>
+       </div>
+       <!-- Menu Toogle @s  -->
+       <div class="header-nav-toggle">
+        <a class="navbar-toggle" data-menu-toggle="header-menu" href="#">
+         <div class="toggle-line">
+          <span>
+          </span>
+         </div>
+        </a>
+       </div>
+       <!-- Menu @s  -->
+       <div class="header-navbar animated" data-animate="fadeInDown" data-delay=".75">
+        <nav class="header-menu" id="header-menu">
+         <ul class="menu">
+          <li class="menu-item">
+           <a class="menu-link nav-link" href="/">
+            <i class="fa fa-home">
+            </i>
+            <span class="athome">
+             Home
+            </span>
+           </a>
+          </li>
+          <li class="menu-item">
+           <a class="menu-link nav-link" href="/about">
+            About
+            <span class="athome">
+             Us
+            </span>
+           </a>
+          </li>
+          <li class="menu-item">
+           <a class="menu-link nav-link" href="/terms">
+            Terms &amp;
+            <span class="athome">
+             Conditions
+            </span>
+           </a>
+          </li>
+          <li class="menu-item">
+           <a class="menu-link nav-link" href="/faq">
+            
+            <span class="athome">
+                Frequently
+            </span>
+            
+            <span class="athome">
+                Asked
+            </span>
+            
+            <span class="athome">
+                Questions
+            </span>
+           </a>
+          </li>
+          <li class="menu-item">
+           <a class="menu-link nav-link" href="/partnership">
+            <i class="fa fa-star">
+            </i>
+            Partnership
+           </a>
+          </li>
+          <li class="menu-item">
+           <a class="menu-link nav-link" href="/contact">
+            Contact
+           </a>
+          </li>
+         </ul>
+         <ul class="menu-btns">
+            {% if user.is_authenticated %}
+            <li>
+                <a class="btn btn-md btn-auto btn-outline btn-grad bgtrans" data-target="#login-popup" data-toggle="modal" href="/accounts/login">
+                 <span>
+                  Logout
+                 </span>
+                </a>
+               </li>
+            {% else %}
+            <li>
+                <a class="btn btn-md btn-auto btn-outline btn-grad bgtrans" href="/accounts/login">
+                 <span>
+                  Log in
+                 </span>
+                </a>
+               </li>
+               <li>
+                <a class="btn btn-md btn-auto btn-grad" href="/accounts/signup">
+                 <span>
+                  Sign up
+                 </span>
+                </a>
+               </li>
+            {% endif %}
+         
+         </ul>
+        </nav>
+       </div>
+       <!-- .header-navbar @e  -->
+      </div>
+     </div>
+    </div>
+    <!-- .header-main @e  -->
+    <div class="header-banner bg-theme-grad">
+     <div class="nk-banner">
+      <div class="banner banner-fs banner-single banner-gap-b2">
+       <div class="banner-wrap">
+        <div class="container">
+         <div class="row align-items-center justify-content-center">
+          <div class="col-lg-5 order-lg-last">
+           <div class="banner-gfx banner-gfx-re-s1 animated" data-animate="fadeInUp" data-delay=".9">
+            <img alt="header" src="{% static 'images/gfx-a.png' %}"/>
+           </div>
+          </div>
+          <!-- .col -->
+          <div class="col-lg-7 col-sm-10 text-center text-lg-left">
+           <div class="banner-caption cpn tc-light">
+            <div class="cpn-head">
+             <h1 class="title animated" data-animate="fadeInUp" data-delay="1">
+              MANAGED CRYPTO TRADING
+              <br class="d-none d-md-block"/>
+              <span style="font-size: 19.5px;">
+               Simply deposit your coins and watch
+                                                        them growing!
+              </span>
+             </h1>
+            </div>
+            <div class="cpn-text">
+             <p class="animated" data-animate="fadeInUp" data-delay="1.1">
+              At
+                                                    Ascent Capital we have simplified the complicated. Open an
+                                                    account with us, deposit desired amount of cryptocurrency coins and
+                                                    our highly-professional and experienced team will do the trading for
+                                                    you!
+             </p>
+            </div>
+            <div class="cpn-action">
+             <div class="cpn-btns animated" data-animate="fadeInUp" data-delay="1.2">
+              <a class="btn btn-grad" href="/accounts/signup">
+               Register
+                                                        Account
+              </a>
+             </div>
+             <ul class="cpn-links animated" data-animate="fadeInUp" data-delay="1.3">
+              <li>
+               <a class="link" href="/">
+                <em class="link-icon far fa-lightbulb">
+                </em>
+                Learn More
+               </a>
+              </li>
+             </ul>
+            </div>
+           </div>
+          </div>
+          <!-- .col -->
+         </div>
+         <!-- .row -->
+        </div>
+       </div>
+      </div>
+     </div>
+     <div class="nk-ovm mask-a shape-a">
+     </div>
+     <div class="particles-container particles-bg" id="particles-bg">
+     </div>
+    </div>
+   </header>
+   {% block content %}{% endblock content %}
+   <footer class="nk-footer bg-theme-grad ov-h overlay-x">
+    <section class="section tc-light tc-light-alt bg-transparent">
+     <div class="container">
+      <div class="nk-block nk-block-footer">
+       <div class="row justify-content-between text-center text-sm-left">
+        <div class="col-lg-3 col-md-4 col-sm-5">
+         <div class="wgs wgs-menu">
+          <h6 class="wgs-title wgs-title-s2 text-white">
+           {{ site.name }} LTD
+          </h6>
+          <div class="wgs-body">
+           <ul class="wgs-list wgs-list-s2">
+            <li class="pdb-s">
+            {{ site.address }}
+            </li>
+            <li>
+             {{ site.second_address }}
+            </li>
+            <li>
+             <br/>
+             <i class="fa fa-envelope-o">
+             </i>
+             <a href="#">
+              {{ site.email }}
+             </a>
+            </li>
+           </ul>
+          </div>
+         </div>
+        </div>
+        <div class="col-lg-2 col-md-4 col-sm-3">
+         <div class="wgs wgs-menu">
+          <h6 class="wgs-title wgs-title-s2 text-white">
+           Quick Links
+          </h6>
+          <div class="wgs-body">
+           <ul class="wgs-links wgs-links-s2">
+            <li>
+             <a href="/">
+              Home
+             </a>
+            </li>
+            <li>
+             <a href="/about">
+              About Us
+             </a>
+            </li>
+            <li>
+             <a href="/accounts/signup">
+              Register Account
+             </a>
+            </li>
+           </ul>
+          </div>
+         </div>
+        </div>
+        <div class="col-lg-2 col-md-4 col-sm-3">
+         <div class="wgs wgs-menu">
+          <h6 class="wgs-title wgs-title-s2 text-white">
+           Resources
+          </h6>
+          <div class="wgs-body">
+           <ul class="wgs-links wgs-links-s2">
+            <li>
+             <a href="/faq">
+              F.A.Q.
+             </a>
+            </li>
+            <li>
+             <a href="/partnership">
+              Become Partners
+             </a>
+            </li>
+            <li>
+             <a href="/contact">
+              Contact Us
+             </a>
+            </li>
+           </ul>
+          </div>
+         </div>
+        </div>
+        <!-- /.footer-top -->
+       </div>
+       <hr width="100%t"/>
+       <div class="row" style="color:blue;">
+        <div class="col-md-4 col-sm-4 footer-about footer-col">
+         <h6 class="heading footer-heading">
+          Quick Links To Buy Bitcoin In EUROPE
+         </h6>
+         <ul class="footer-nav" style="padding-left:20px; color:white;">
+          <li>
+           <a href="https://coinmama.com/">
+            Coin Mama
+           </a>
+          </li>
+          <li>
+           <a href="https://paybis.com/">
+            PayBis
+           </a>
+          </li>
+          <li>
+           <a href="https://coinbase.com/">
+            Coin Base
+           </a>
+          </li>
+          <li>
+           <a href="https://luno.com/">
+            Luno
+           </a>
+          </li>
+          <li>
+           <a href="https://xcoin.com/">
+            Xcoin
+           </a>
+          </li>
+          <li>
+           <a href="https://kraken.com/">
+            kraken
+           </a>
+          </li>
+          <li>
+           <a href="https://binance.com/">
+            Binance
+           </a>
+          </li>
+          <li>
+           <a href="https://bit2me.com/">
+            Bit2me
+           </a>
+          </li>
+         </ul>
+        </div>
+        <div class="col-md-4 col-sm-4 footer-about footer-col">
+         <h6 class="heading footer-heading">
+          Quick Links To Buy Bitcoin In AMERICA
+         </h6>
+         <ul class="footer-nav" style="padding-left:20px;">
+          <li>
+           <a href="https://coinmama.com/">
+            Coin Mama
+           </a>
+          </li>
+          <li>
+           <a href="https://paybis.com/">
+            PayBis
+           </a>
+          </li>
+          <li>
+           <a href="https://coinbase.com/">
+            Coin Base
+           </a>
+          </li>
+          <li>
+           <a href="https://luno.com/">
+            Luno
+           </a>
+          </li>
+          <li>
+           <a href="https://xcoin.com/">
+            Xcoin
+           </a>
+          </li>
+          <li>
+           <a href="https://localbitcoins.com/">
+            Local Bitcoins
+           </a>
+          </li>
+          <li>
+           <a href="https://cex.io/">
+            cex
+           </a>
+          </li>
+         </ul>
+        </div>
+        <div class="col-md-4 col-sm-4 footer-about footer-col">
+         <h6 class="heading footer-heading">
+          Quick Links To Buy Bitcoin In OTHERS
+         </h6>
+         <ul class="footer-nav" style="padding-left:20px;">
+          <li>
+           <a href="https://indodax.com/">
+            Indodax
+           </a>
+          </li>
+          <li>
+           <a href="https://www.coinhako.com/">
+            Coinhako
+           </a>
+          </li>
+          <li>
+           <a href="https://wazirx.com/">
+            Wazirx
+           </a>
+          </li>
+          <li>
+           <a href="https://zebpay.com/">
+            Zebpay
+           </a>
+          </li>
+         </ul>
+        </div>
+       </div>
+      </div>
+     </div>
+    </section>
+   </footer>
+   <!-- /.footer-main -->
+   <div class="col-lg-4 col-md-8 offset-lg-1">
+    <div class="wgs wgs-text">
+     <a class="wgs-logo" href="/">
+      <img alt="logo" src="{% static 'images/logo.png' %}" style="height:45px;width:100px;" />
+     </a>
+     <div class="wgs-body">
+      <div class="wgs-subscribe wgs-subscribe-s2">
+       <p>
+        We are {{ site.name }}, a professional cryptocurrency trading company.
+       </p>
+       <ul class="social">
+        <li>
+         <a href="https://www.facebook.com/#" target="_blank">
+          <em class="social-icon fab fa-facebook-f">
+          </em>
+         </a>
+        </li>
+        <li>
+         <a href="https://twitter.com/#" target="_blank">
+          <em class="social-icon fab fa-twitter">
+          </em>
+         </a>
+        </li>
+       </ul>
+      </div>
+     </div>
+    </div>
+   </div>
+   <div class="footer-bottom pdt-r">
+    <div class="copyright-text copyright-text-s3 text-center">
+     <p>
+      © 2022 {{ site.name }}. All Rights Reserved.
+      <a href="/terms">
+       Terms &amp;
+                       Conditions
+      </a>
+      |
+      <a href="/">
+       Privacy Policy
+      </a>
+     </p>
+    </div>
+   </div>
+   <div class="preloader">
+    <span class="spinner spinner-round">
+    </span>
+   </div>
+   <!-- JavaScript -->
+   <script src="{% static 'js/jquery.bundle.js' %}">
+   </script>
+   <script src="{% static 'js/scripts.js' %}">
+   </script>
+   <script src="{% static 'js/charts.js' %}">
+   </script>
+   <script src="{% static 'js/calculator.js' %}">
+   </script>
+   <script src="{% static 'js/prices.js' %}">
+   </script>
+   <script async="" src="{% static 'code.tidio.co_443/nwtsab49lztlsiajvqle10jarw7oq9qd.html' %}">
+   </script>
+   <!-- GetButton.io widget -->
+   <script type="text/javascript">
+    (function () {
+           var options = {
+               whatsapp: "+61488873142", // WhatsApp number
+               call_to_action: "Message us", // Call to action
+               button_color: "#FF6550", // Color of button
+               position: "left", // Position may be 'right' or 'left'
+           };
+           var proto = 'index.html', host = "getbutton.io", url = proto + '//static.' + host;
+           var s = document.createElement('script'); s.type = 'text/javascript'; s.async = true; s.src = url + '/widget-send-button/js/init.js';
+           s.onload = function () { WhWidgetSendButton.init(host, proto, options); };
+           var x = document.getElementsByTagName('script')[0]; x.parentNode.insertBefore(s, x);
+       })();
+   </script>
+   <!-- /GetButton.io widget -->
+   <!-- Mirrored from {{ site.name }}/ by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 29 Dec 2022 21:07:54 GMT -->
+   
