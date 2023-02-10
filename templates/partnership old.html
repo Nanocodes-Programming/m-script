@@ -1,0 +1,178 @@
+{% extends 'main.html' %}
+
+{% load static %}
+
+{% block content %}
+  </div>
+ </body>
+</html>
+<!-- .nk-banner -->
+<div class="nk-ovm shape-a-sm">
+</div>
+<!-- .header-banner @e  -->
+<main class="nk-pages">
+ <section class="section bg-light">
+  <div class="container">
+   <!-- Block @s
+        -->
+   <div class="nk-block">
+    <div class="row justify-content-center">
+     <div class="col-xl-6 col-lg-8">
+      <ul class="nav tab-nav tab-nav-btn-bdr-s2 justify-content-center justify-content-sm-between pb-4 pb-sm-5">
+       <li>
+        <a class="active" data-toggle="tab" href="#tab-1-1">
+         Standard
+         <span class="dispare">
+          Program
+         </span>
+        </a>
+       </li>
+       <li class="tab-nav-sap d-sm-block">
+       </li>
+       <li>
+        <a class="" data-toggle="tab" href="#tab-1-2">
+         Representatives
+        </a>
+       </li>
+      </ul>
+     </div>
+    </div>
+    <br>
+     <br>
+      <div class="tab-content">
+       <div class="tab-pane fade active show" id="tab-1-1">
+        <div class="row align-items-center justify-content-between gutter-vr-40px">
+         <div class="col-lg-6 order-lg-last">
+          <div class="nk-block-img nk-block-ca">
+           <div class="nk-circle-animation nk-df-center fast">
+           </div>
+           <!-- .circle-animation -->
+           <img alt="" class="rounded" src="{% static 'images/standard.png' %}"/>
+          </div>
+         </div>
+         <div class="col-lg-5">
+          <div class="nk-block-text mgb-m30">
+           <h2 class="title title-md">
+            Standard Affiliate Program
+           </h2>
+           <p>
+            Standard affiliate commission is applied for every member that opens an account
+                                                with our company.
+           </p>
+           <p>
+            You do not need to fill in any form or do anything to join our affiliate program.
+                                                You can simply find your affiliate link in your account referrals section.
+           </p>
+           <br/>
+           <div class="feature feature-inline feature-middle">
+            <div class="feature-icon feature-icon-md">
+             <em class="icon icon-md icon-grd ikon ikon-user">
+             </em>
+            </div>
+            <div class="feature-text">
+             <p>
+              After a person registers using your affiliate link, they will
+                                                        automatically become your referral.
+             </p>
+            </div>
+           </div>
+           <div class="feature feature-inline feature-middle">
+            <div class="feature-icon feature-icon-md">
+             <em class="icon icon-md icon-grd fa fa-ban" style="font-size:30px;">
+             </em>
+            </div>
+            <div class="feature-text">
+             <p>
+              {{ site.name }} administration does not tolerate spamming as an
+                                                        appropriate promotional method.
+             </p>
+            </div>
+           </div>
+          </div>
+         </div>
+        </div>
+       </div>
+       <div class="tab-pane fade" id="tab-1-2">
+        <div class="row align-items-center justify-content-between gutter-vr-40px">
+         <div class="col-lg-6 order-lg-last">
+          <div class="nk-block-img nk-block-ca">
+           <div class="nk-circle-animation nk-df-center fast">
+           </div>
+           <!-- .circle-animation -->
+           <img alt="" class="rounded" src="{% static 'images/representatives.png' %}"/>
+          </div>
+         </div>
+         <div class="col-lg-5">
+          <div class="nk-block-text mgb-m30">
+           <h2 class="title title-md">
+            Regional Representatives
+           </h2>
+           <p>
+            If you want to become a representative you have to support and promote our
+                                                project in your region through any legal way possible.
+           </p>
+           <p>
+            It is not necessary to have an active deposit
+                                                withAscent capital management in order to participate
+                                                in our Representative Program. As long as you can explain how do you plan
+                                                promoting our platform, your application will be considered.
+           </p>
+           <br/>
+           <div class="feature feature-inline feature-middle">
+            <div class="feature-icon feature-icon-md">
+             <em class="icon icon-md icon-grd ikon ikon-globe">
+             </em>
+            </div>
+            <div class="feature-text">
+             <p>
+              Representatives are awarded with twice as much referral commission, which
+                                                        is
+              <strong>
+               20%
+              </strong>
+              of your referral’s deposit.
+             </p>
+            </div>
+           </div>
+          </div>
+         </div>
+        </div>
+       </div>
+      </div>
+     </br>
+    </br>
+   </div>
+   <!-- .block @e  -->
+  </div>
+ </section>
+ <section class="section bg-light">
+  <div class="container">
+   <div class="card" style="padding: 60px 30px;">
+    <div class="section-head text-center wide-auto">
+     <h2 class="title">
+      Become a Regional Representative
+     </h2>
+    </div>
+    <p style="text-align: center; margin-top:-40px;;">
+     In order to become our company's Regional
+                            Representative you have to have the ability to support and promote our project in your region, via
+                            organizing seminars, blog post, videos etc
+     <br/>
+     <br/>
+     Please contact
+     <a href="#">
+      {{ site.email }}
+     </a>
+     for application with your personal
+                            details.
+     <br/>
+     <br/>
+     <a class="btn btn-grad btn-round btn-lg" href="mailto:{{ site.email }}">
+      Apply Here
+     </a>
+    </p>
+   </div>
+  </div>
+ </section>
+</main>
+{% endblock content %}

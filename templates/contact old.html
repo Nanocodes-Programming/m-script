@@ -1,0 +1,404 @@
+{% extends 'main.html' %}
+
+{% load static %}
+
+{% block content %}
+   <main class="nk-pages">
+    <section class="section section-l section-contact bg-transparent">
+     <div class="container">
+      <!-- Block @s
+        -->
+      <div class="nk-block block-contact" id="contact">
+       <div class="row justify-content-center no-gutters">
+        <div class="col-lg-6">
+         <div class="contact-wrap round split split-left split-lg-left bg-white">
+          <h5 class="title title-md">
+           Contact Form
+          </h5>
+          <script language="javascript">
+           function checkform() {
+                                            if (document.mainform.name.value == '') {
+                                                alert("Please type your full name!");
+                                                document.mainform.name.focus();
+                                                return false;
+                                            }
+                                            if (document.mainform.email.value == '') {
+                                                alert("Please enter your e-mail address!");
+                                                document.mainform.email.focus();
+                                                return false;
+                                            }
+                                            if (document.mainform.message.value == '') {
+                                                alert("Please type your message!");
+                                                document.mainform.message.focus();
+                                                return false;
+                                            }
+                                            return true;
+                                        }
+          </script>
+          <form action="https://ascentcapitalmgt.co/postcontact" method="post" name="mainform" onsubmit="return checkform()">
+           <input name="_token" type="hidden" value="2LXaz8zay85geczdjUN24qggBXHy2ZDMNqS6PlS4"/>
+           <input name="form_id" type="hidden" value="16630690348398"/>
+           <input name="form_token" type="hidden" value="95fc4a9cdf12dc1980685cb50cc300da"/>
+           <input name="a" type="hidden" value="support"/>
+           <input name="action" type="hidden" value="send"/>
+           <!--readonly-->
+           <div class="field-item">
+            <input aria-required="true" class="input-line required" name="name" type="text" value=""/>
+            <label class="field-label field-label-line">
+             Full Name
+            </label>
+           </div>
+           <div class="field-item">
+            <input aria-required="true" class="input-line required email" name="email" type="text" value=""/>
+            <label class="field-label field-label-line">
+             Email
+            </label>
+           </div>
+           <div class="field-item">
+            <textarea aria-required="true" class="input-line input-textarea required" name="message "></textarea>
+            <label class="field-label field-label-line">
+             Message
+            </label>
+           </div>
+           <input class="d-none" name="form-anti-honeypot" type="text" value=""/>
+           <div class="row">
+            <div class="col-sm-4">
+             <button class="btn btn-lg btn-grad" type="submit">
+              Submit
+             </button>
+            </div>
+            <div class="col-sm-8">
+             <div class="form-results">
+             </div>
+            </div>
+           </div>
+          </form>
+         </div>
+        </div>
+        <!-- .col -->
+        <div class="col-lg-4">
+         <div class="contact-wrap split split-right split-lg-right bg-genitian bg-theme tc-light">
+          <div class="d-flex flex-column justify-content-between h-100">
+           <ul class="contact-list">
+            <li>
+             <em class="contact-icon fas fa-building">
+             </em>
+             <div class="contact-text">
+              <h6>
+               ascentcapitalmgt.co
+              </h6>
+              <span>
+               67 Zipfs Road, CAMIRA QLD, Australia
+              </span>
+             </div>
+            </li>
+            <li>
+             <em class="contact-icon fas fa-envelope">
+             </em>
+             <div class="contact-text">
+              <span>
+               info@ascentcapitalmgt.co
+              </span>
+             </div>
+            </li>
+           </ul>
+          </div>
+         </div>
+        </div>
+        <!-- .col -->
+       </div>
+       <!-- .row -->
+      </div>
+      <!-- .block @e  -->
+     </div>
+    </section>
+   </main>
+   <footer class="nk-footer bg-theme-grad ov-h overlay-x">
+    <section class="section tc-light tc-light-alt bg-transparent">
+     <div class="container">
+      <div class="nk-block nk-block-footer">
+       <div class="row justify-content-between text-center text-sm-left">
+        <div class="col-lg-3 col-md-4 col-sm-5">
+         <div class="wgs wgs-menu">
+          <h6 class="wgs-title wgs-title-s2 text-white">
+           ascentcapitalmgt.co LTD
+          </h6>
+          <div class="wgs-body">
+           <ul class="wgs-list wgs-list-s2">
+            <li class="pdb-s">
+             Registration No. CHE-435.408.786
+            </li>
+            <li>
+             67 Zipfs Road, CAMIRA QLD, Australia
+            </li>
+            <li>
+             <br/>
+             <i class="fa fa-envelope-o">
+             </i>
+             <a href="#">
+              info@ascentcapitalmgt.co
+             </a>
+            </li>
+           </ul>
+          </div>
+         </div>
+        </div>
+        <div class="col-lg-2 col-md-4 col-sm-3">
+         <div class="wgs wgs-menu">
+          <h6 class="wgs-title wgs-title-s2 text-white">
+           Quick Links
+          </h6>
+          <div class="wgs-body">
+           <ul class="wgs-links wgs-links-s2">
+            <li>
+             <a href="/">
+              Home
+             </a>
+            </li>
+            <li>
+             <a href="/about">
+              About Us
+             </a>
+            </li>
+            <li>
+             <a href="/accounts/signup">
+              Register Account
+             </a>
+            </li>
+           </ul>
+          </div>
+         </div>
+        </div>
+        <div class="col-lg-2 col-md-4 col-sm-3">
+         <div class="wgs wgs-menu">
+          <h6 class="wgs-title wgs-title-s2 text-white">
+           Resources
+          </h6>
+          <div class="wgs-body">
+           <ul class="wgs-links wgs-links-s2">
+            <li>
+             <a href="/faq">
+              F.A.Q.
+             </a>
+            </li>
+            <li>
+             <a href="/partnership">
+              Become Partners
+             </a>
+            </li>
+            <li>
+             <a href="/contact">
+              Contact Us
+             </a>
+            </li>
+           </ul>
+          </div>
+         </div>
+        </div>
+        <!-- /.footer-top -->
+       </div>
+       <hr width="100%t"/>
+       <div class="row" style="color:blue;">
+        <div class="col-md-4 col-sm-4 footer-about footer-col">
+         <h6 class="heading footer-heading">
+          Quick Links To Buy Bitcoin In EUROPE
+         </h6>
+         <ul class="footer-nav" style="padding-left:20px; color:white;">
+          <li>
+           <a href="https://coinmama.com/">
+            Coin Mama
+           </a>
+          </li>
+          <li>
+           <a href="https://paybis.com/">
+            PayBis
+           </a>
+          </li>
+          <li>
+           <a href="https://coinbase.com/">
+            Coin Base
+           </a>
+          </li>
+          <li>
+           <a href="https://luno.com/">
+            Luno
+           </a>
+          </li>
+          <li>
+           <a href="https://xcoin.com/">
+            Xcoin
+           </a>
+          </li>
+          <li>
+           <a href="https://kraken.com/">
+            kraken
+           </a>
+          </li>
+          <li>
+           <a href="https://binance.com/">
+            Binance
+           </a>
+          </li>
+          <li>
+           <a href="https://bit2me.com/">
+            Bit2me
+           </a>
+          </li>
+         </ul>
+        </div>
+        <div class="col-md-4 col-sm-4 footer-about footer-col">
+         <h6 class="heading footer-heading">
+          Quick Links To Buy Bitcoin In AMERICA
+         </h6>
+         <ul class="footer-nav" style="padding-left:20px;">
+          <li>
+           <a href="https://coinmama.com/">
+            Coin Mama
+           </a>
+          </li>
+          <li>
+           <a href="https://paybis.com/">
+            PayBis
+           </a>
+          </li>
+          <li>
+           <a href="https://coinbase.com/">
+            Coin Base
+           </a>
+          </li>
+          <li>
+           <a href="https://luno.com/">
+            Luno
+           </a>
+          </li>
+          <li>
+           <a href="https://xcoin.com/">
+            Xcoin
+           </a>
+          </li>
+          <li>
+           <a href="https://localbitcoins.com/">
+            Local Bitcoins
+           </a>
+          </li>
+          <li>
+           <a href="https://cex.io/">
+            cex
+           </a>
+          </li>
+         </ul>
+        </div>
+        <div class="col-md-4 col-sm-4 footer-about footer-col">
+         <h6 class="heading footer-heading">
+          Quick Links To Buy Bitcoin In OTHERS
+         </h6>
+         <ul class="footer-nav" style="padding-left:20px;">
+          <li>
+           <a href="https://indodax.com/">
+            Indodax
+           </a>
+          </li>
+          <li>
+           <a href="https://www.coinhako.com/">
+            Coinhako
+           </a>
+          </li>
+          <li>
+           <a href="https://wazirx.com/">
+            Wazirx
+           </a>
+          </li>
+          <li>
+           <a href="https://zebpay.com/">
+            Zebpay
+           </a>
+          </li>
+         </ul>
+        </div>
+       </div>
+      </div>
+     </div>
+    </section>
+   </footer>
+   <!-- /.footer-main -->
+   <div class="col-lg-4 col-md-8 offset-lg-1">
+    <div class="wgs wgs-text">
+     <a class="wgs-logo" href="/">
+      <img alt="logo" src="{% static 'images/logo.png' %}" srcset="https://ascentcapitalmgt.co/assets/images/logo.png"/>
+     </a>
+     <div class="wgs-body">
+      <div class="wgs-subscribe wgs-subscribe-s2">
+       <p>
+        We are ascentcapitalmgt.co, a professional cryptocurrency trading company.
+       </p>
+       <ul class="social">
+        <li>
+         <a href="https://www.facebook.com/#" target="_blank">
+          <em class="social-icon fab fa-facebook-f">
+          </em>
+         </a>
+        </li>
+        <li>
+         <a href="https://twitter.com/#" target="_blank">
+          <em class="social-icon fab fa-twitter">
+          </em>
+         </a>
+        </li>
+       </ul>
+      </div>
+     </div>
+    </div>
+   </div>
+  </div>
+  <div class="footer-bottom pdt-r">
+   <div class="copyright-text copyright-text-s3 text-center">
+    <p>
+     © 2022 ascentcapitalmgt.co. All Rights Reserved.
+     <a href="/terms">
+      Terms &amp;
+                    Conditions
+     </a>
+     |
+     <a href="/">
+      Privacy Policy
+     </a>
+    </p>
+   </div>
+  </div>
+ </body>
+</html>
+<div class="preloader">
+ <span class="spinner spinner-round">
+ </span>
+</div>
+<!-- JavaScript -->
+<script src="{% static 'js/jquery.bundle.js' %}">
+</script>
+<script src="{% static 'js/scripts.js' %}">
+</script>
+<script src="{% static 'js/charts.js' %}">
+</script>
+<script src="{% static 'js/calculator.js' %}">
+</script>
+<script src="{% static 'js/prices.js' %}">
+</script>
+<script async="" src="{% static 'code.tidio.co_443/nwtsab49lztlsiajvqle10jarw7oq9qd.html' %}">
+</script>
+<!-- GetButton.io widget -->
+<script type="text/javascript">
+ (function () {
+        var options = {
+            whatsapp: "+61488873142", // WhatsApp number
+            call_to_action: "Message us", // Call to action
+            button_color: "#FF6550", // Color of button
+            position: "left", // Position may be 'right' or 'left'
+        };
+        var proto = 'contact.html', host = "getbutton.io", url = proto + '//static.' + host;
+        var s = document.createElement('script'); s.type = 'text/javascript'; s.async = true; s.src = url + '/widget-send-button/js/init.js';
+        s.onload = function () { WhWidgetSendButton.init(host, proto, options); };
+        var x = document.getElementsByTagName('script')[0]; x.parentNode.insertBefore(s, x);
+    })();
+</script>
+<!-- /GetButton.io widget -->
+<!-- Mirrored from ascentcapitalmgt.co/contact by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 29 Dec 2022 21:10:23 GMT -->
+{% endblock content %}
