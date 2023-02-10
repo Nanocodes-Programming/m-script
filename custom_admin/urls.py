@@ -30,11 +30,12 @@ urlpatterns = [
 
     # path('deposit-plan/', views.adminsetting_depositplan, name='adminsetting_depositplan'),
     # path('add-testimonial/', views.adminsetting_addtesti, name='adminsetting_addtesti'),
-    path('add-faqs/', views.adminsetting_addfaqs, name='adminsetting_addfaqs'),
+    # path('add-faqs/', views.adminsetting_addfaqs, name='adminsetting_addfaqs'),
     path('set-charges/', views.adminsetting_setcharges, name='adminsetting_setcharges'),
     path('extra-statistics/', views.adminsetting_extrastat, name='adminsetting_extrastat'),
     path('deposit-plan/', views.DepositPlan.as_view(), name='adminsetting_depositplan'),
     path('add-testimonial/', views.FeedBack.as_view(), name='adminsetting_addtesti'),
+    path('add-faqs/', views.AdminFaqs.as_view(), name='adminsetting_addfaqs'),
 
     path('send-bonus/', views.adminsendbonus, name='admin-sendbonus'),
     path('send-penalty/', views.adminsendpenalty, name='admin-sendpenalty'),

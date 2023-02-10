@@ -482,8 +482,12 @@ class FeedBack(LoginRequiredMixin, ListView):
 # def adminsetting_addtesti(request):
 #     return render(request,'admin_temp/setting2.html')
 
-def adminsetting_addfaqs(request):
-    return render(request,'admin_temp/setting3.html')
+class AdminFaqs(LoginRequiredMixin, ListView):
+    template_name = 'admin_temp/setting3.html'
+    model = FAQs
+    context_object_name = 'faqs'
+# def adminsetting_addfaqs(request):
+#     return render(request,'admin_temp/setting3.html')
 
 def adminsetting_setcharges(request):
     return render(request,'admin_temp/setting4.html')
